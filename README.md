@@ -41,4 +41,52 @@ END
 GET address 
 DISPLAY ("Thanks for trusting us, your item will be delivered by tomorrow")
            
+           
+           
+           
+ #HUMAN RESOURCE1
+ 
+ 
+ START
+
+PROMPT for sellingPrice
+GET sellingPrice
+PROMPT for costPrice
+GET costPrice
+
+IF sellingPrice < costPrice 
+THEN write 'loss was made'
+IF else sellingPrice > costPrice 
+THEN difference amount = sellingPrice - costPrice
+GET difference amount
+
+Financial return percentage = difference amount ÷ costPrice × 100
+ENDIF
+DISPLAY financial return percentage
+END
+
+
+
+Desk check
+
+sellingPrice = N$ 9000
+costPrice = N$ 3000
+Deference amount = N$ 6000
+Financial return percentage = 200% expect output.
+
+START
+
+Prompt for sellingPrice
+sellingPrice = N$ 9000
+Prompt for costPrice
+costPrice = N$ 3000
+5 If sellingPrice < costPrice then write 'loss was made'
+If else sellingPrice > costPrice then difference amount = N$ 9000 - N$ 3000
+Get difference amount = N$ 6000
+Financial return percentage = N$ 6000 ÷ N$ 3000 × 100
+End if
+Display financial return percentage = 200%
+END
+
+ 
 

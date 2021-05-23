@@ -1,4 +1,16 @@
 # ICG-PROJECT
+
+#customer relationship management database to serve as a sales tool
+
+
+
+
+
+
+
+
+
+
 HI GUYS HERE IS THE REPOSITORY, I AND JOSUA MADE THE SAME CHOICE I THINK WE SHOULD WORK NOW ON THIS AND FINSIH UP
 
 START
@@ -47,12 +59,23 @@ DISPLAY ("Thanks for trusting us, your item will be delivered by tomorrow")
  #HUMAN RESOURCE1
  #this is Josua 
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  START
 
-PROMPT for sellingPrice
-GET sellingPrice
-PROMPT for costPrice
-GET costPrice
+PROMPT for sellingPrice,costPrice
+GET sellingPrice, costPrice
+
+
 
 IF sellingPrice < costPrice 
 THEN write 'loss was made'
@@ -96,25 +119,19 @@ END
  
  
  
- HELLEN SOLUTION 
- #CLIENT-SYSTEM
+ 
 
-Write a program that calculates the amount of money the beauty shop receives per month,display and output the money.
-START
-Prompt the amount of money
-IF amount of money < invested money THEN
-Write 'LOSS'
-ELSE
-IF amount of money > invested money THEN
-Write 'PROFIT MADE'
-ENDIF
-STOP
 
-Write a program that shows how many products are needed so that they can be transported to the beauty shop.
-START
-Order products from suppliers
-Get products from suppliers
-If products are >= 35 THEN
+
+
+PROMPT product 
+
+Get ItemName=array(Shampoo, ),(Fringes),(Bangs)
+
+DOWHILE( ItemName=0to2)
+
+IF products are >= 35 THEN
+
 Execute'PRODUCT SHOULD BE TRANSPORTED TO DESTINATION'
 ELSE
 Execute 'THE AMOUNT OF PRODUCT YOU SELECTED DOES NOT MEET THE MINIMUM VALUE,PLEASE WAIT TILL IT DOES'

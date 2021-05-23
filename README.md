@@ -45,7 +45,7 @@ DISPLAY ("Thanks for trusting us, your item will be delivered by tomorrow")
            
            
  #HUMAN RESOURCE1
- 
+ #this is Josua 
  
  START
 
@@ -56,7 +56,7 @@ GET costPrice
 
 IF sellingPrice < costPrice 
 THEN write 'loss was made'
-IF else sellingPrice > costPrice 
+ELSEIF else sellingPrice > costPrice 
 THEN difference amount = sellingPrice - costPrice
 GET difference amount
 

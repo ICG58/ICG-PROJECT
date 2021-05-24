@@ -1,3 +1,13 @@
+# Discussion-repo
+
+Are we all able to see the discusion repository guys,,?
+HI yes i can actually... well let me give my suggestion
+Well we can mix CLIENT SOLUTION, AND JOSUA HUMAN RESOURCE +ELLEN PSEUDO CODE LET ME WRITE DOWN WAHT I MEAN 
+
+
+
+
+
 # ICG-PROJECT
 
 #customer relationship management database to serve as a sales tool
@@ -11,152 +21,158 @@
 
 
 
-HI GUYS HERE IS THE REPOSITORY, I AND JOSUA MADE THE SAME CHOICE I THINK WE SHOULD WORK NOW ON THIS AND FINSIH UP
+
+#  CUSTOMER RELATIONSHIP MANAGEMENT DATABASE CUSTOMER
 
 START
 PROMPT items
-GET
+GET  ItemName
 ItemName=INPUT("Item name:Shampoo, Bangs, Fringes")
-IF ItemName==("Shampoo") THEN
+IF ItemName=("Shampoo") THEN
           DISPLAY("You have selected Shampoo, it costs NS500")
-ELSEIF ItemName==("Bangs") THEN
+ELSE
+    IF ItemName=("Bangs") THEN
           DISPLAY("You have selected Bangs, it costs NS700")
-ELSEIF ItemName==("Fringes") THEN
+ELSE
+    IF ItemName=("Fringes") THEN
           DISPLAY("You have selected Fringes, it costs NS100")
-ELSE DISPLAY("This Item doesn't exist!")
+ELSE  
+     DISPLAY("This Item doesn't exist!")
 ENDIF
 ENDIF
 ENDIF
 END
-GET 
+
+PROMPT payement
+GET payement
+
 payement=INPUT("How do you want to pay?:Credit Card, Cash")
-IF payement==stg("Credit card") THEN
+IF payement=stg("Credit card") THEN
                 DISPLAY("Enter your Credit card number")
  ELSE DISPLAY  (Please feel free to reach our distributors Iscgem Pharmacies Namibia and Pnp Namibia stores")
  ENDIF
  END
- GET Credit_Card_number
+ 
+ 
+ PROMPT  Credit_Card_number
+ GET Credit_Card_number, Amount
  DISPLAY("Thanks, enter your Amount")
  GET Amount
  IF Amount=INT(500)
-            DISPLAY("You have bought Shampoo, enter your Home addres")
- ELSEIF Amount=INT(700)
-            DISPLAY("You have bought Bangs, enter your Home addres")
-  ELSEIF Amount=INT(500)
-            DISPLAY("You have bought Fringes, enter your Home addres")
+            DISPLAY("You have bought Shampoo, enter your Home address")
+ ELSE 
+      IF Amount=INT(700)
+            DISPLAY("You have bought Bangs, enter your Home address")
+  ELSE 
+        IF Amount=INT(500)
+            DISPLAY("You have bought Fringes") 
             
             
 ENDIF  
 ENDIF  
 ENDIF  
 END
+
+INPUT ("your Home address")
 GET address 
 DISPLAY ("Thanks for trusting us, your item will be delivered by tomorrow")
            
+   # HUMAN RESOURCE FUNCTION
+  
+  
+ SET Name of employee to ("Josuah")
+INPUT("Enter your name")
+IF name=Josuah
+   
+   DISPLAY("HI josuah, your attendence has been recorded")
+ELSE    
+  DISPLAY("Unknown")
+   
+   ENDIF 
+   END
+
+
+
+     
+      
+      
+      
+      
+      
            
-           
-           
- #HUMAN RESOURCE1
- #this is Josua 
+# SERVICE PORTFOLIO
  
  
- 
- 
- 
- 
- 
- 
+
  
  
  
  
  START
 
-PROMPT for sellingPrice,costPrice
-GET sellingPrice, costPrice
+PROMPT  sellingPrice,costPrice
+GET     sellingPrice, costPrice
 
+ sellingPrice = Buying_Price+ VAT
+ VAT = sellingPrice - costPrice
 
-
-IF sellingPrice < costPrice 
-THEN write 'loss was made'
-ELSEIF else sellingPrice > costPrice 
-THEN difference amount = sellingPrice - costPrice
-GET difference amount
-
-Financial return percentage = difference amount ÷ costPrice × 100
+IF sellingPrice <= costPrice THEN 
+    PRINT("Loss was made")
+ELSE
+   IF sellingPrice => costPrice THEN 
+    
+     PRINT("You gain VAT")
+     
 ENDIF
-DISPLAY financial return percentage
+ENDIF
 END
+     
 
 
 
-Desk check
 
-sellingPrice = N$ 9000
-costPrice = N$ 3000
-Deference amount = N$ 6000
-Financial return percentage = 200% expect output.
+#Desk check for answer espected
+
+sellingPrice = 500
+costPrice =  300
+VAT = 200
+ 
+Financial return percentage = 166% expect output.
+
 
 START
 
-Prompt for sellingPrice
-sellingPrice = N$ 9000
-Prompt for costPrice
-costPrice = N$ 3000
-5 If sellingPrice < costPrice then write 'loss was made'
-If else sellingPrice > costPrice then difference amount = N$ 9000 - N$ 3000
-Get difference amount = N$ 6000
-Financial return percentage = N$ 6000 ÷ N$ 3000 × 100
+Prompt for sellingPrice, cost_price,VAT
+READ sellingPrice =  500,costPrice =  300
+
+
+sellingPrice = 300+200 
+ IF sellingPrice <= 300 THEN
+   PRINT("Loss was made")
+ELSE
+    IF  sellingPrice => 300 THEN
+    
+    PRINT("You gain N$200")
+    
+
+
+Financial return percentage =  500 ÷  300 × 100
 End if
-Display financial return percentage = 200%
+Display financial 
+PRINT ("percentage=166%)
 END
 
  
  
  
  
- 
- 
- 
- 
- 
+SET Name of employee to ("Josuah")
+INPUT("Enter your name")
+IF name=Josuah
+   
+   DISPLAY("HI josuah, your attendence has been recorded")
+   
+   
 
-
-
-
-PROMPT product 
-
-Get ItemName=array(Shampoo, ),(Fringes),(Bangs)
-
-DOWHILE( ItemName=0to2)
-
-IF products are >= 35 THEN
-
-Execute'PRODUCT SHOULD BE TRANSPORTED TO DESTINATION'
-ELSE
-Execute 'THE AMOUNT OF PRODUCT YOU SELECTED DOES NOT MEET THE MINIMUM VALUE,PLEASE WAIT TILL IT DOES'
-ELSE
-Execute'ERROR,PLEASE TRY AGAIN LATER'
-ENDIF
-STOP
-
-Write a program to calculate the store values and include the VAT
-START
-Enter num
-For e = 1 to num DO
-Enter item(e)
-Enter price
-Enter Bprice
-Enter code
-IF code = 1 THEN
-Sprice(e)= Bprice * 2.00 * 1.05
-ELSE
-Sprice(e)= Bprice * 1.00
-endif
-ENDFOR
-For e = 1 to num DO
-Print item(e)
-ENDFOR
-STOP
 
 

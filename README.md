@@ -1,5 +1,5 @@
 START PROMPT items
- GET ItemName ItemName=INPUT("Item name:Shampoo, Bangs, Fringes") 
+ GET ItemName ItemName(Shampoo OR Bangs OR Fringes) 
 IF ItemName=("Shampoo") THEN DISPLAY("You have selected Shampoo, it costs NS500") ELSE 
 IF ItemName=("Bangs") THEN DISPLAY("You have selected Bangs, it costs NS700") ELSE 
 IF ItemName=("Fringes") THEN DISPLAY("You have selected Fringes, it costs NS100") ELSE
@@ -12,15 +12,26 @@ END
 PROMPT payment 
 GET payment
 
-payment=INPUT("How do you want to pay?:Credit Card, Cash") IF payment= Credit card THEN 
-DISPLAY("Enter your Credit card number") ELSE
+payment=INPUT("How do you want to pay?:Credit Card OR Cash")
+IF payment= Credit card THEN 
+DISPLAY("Enter your Credit card number")
+ELSE
  DISPLAY (Please feel free to reach our distributors Dischem Pharmacies Namibia and PnP Namibia stores")
  ENDIF
  END
 
+
 PROMPT Credit_Card_number 
 GET Credit_Card_number, Amount
- DISPLAY("Thanks, enter your Amount") GET Amount IF Amount=INT(500) DISPLAY("You have bought Shampoo, enter your Home address") ELSE IF Amount=INT(700) DISPLAY("You have bought Bangs, enter your Home address") ELSE IF Amount=INT(500) DISPLAY("You have bought Fringes")
+ DISPLAY("Thanks, enter your Amount") 
+ GET Amount
+ IF Amount=INT(500) DISPLAY("You have bought Shampoo, enter your Home address") 
+ ELSE IF Amount=INT(700) THEN 
+                DISPLAY("You have bought Bangs, enter your Home address") 
+ ELSE IF Amount=INT(500) THEN
+           DISPLAY("You have bought Fringes")
+ ELSE  THEN 
+        DISPLAY("Error")
 
 ENDIF
 ENDIF
@@ -28,7 +39,17 @@ ENDIF
 END
 
 INPUT ("your Home address")
- GET address DISPLAY ("Thanks for trusting us, your item will be delivered by tomorrow")
+ GET address 
+ DISPLAY ("Thanks for trusting us, your item will be delivered by tomorrow")
+END
+
+
+
+
+
+
+
+
 
 
 
@@ -37,9 +58,11 @@ START
 PROMPT sellingPrice,costPrice 
 GET sellingPrice, costPrice
 
-sellingPrice = Buying_Price+ VAT VAT = sellingPrice - costPrice
+sellingPrice = Buying_Price+ VAT 
+VAT = sellingPrice - costPrice
 
-IF sellingPrice <= costPrice THEN PRINT("Loss was made") ELSE 
+IF sellingPrice <= costPrice THEN 
+PRINT("Loss was made") ELSE 
 IF sellingPrice => costPrice THEN
 
  PRINT("You gain VAT")

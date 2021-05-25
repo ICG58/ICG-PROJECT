@@ -88,25 +88,72 @@ End if
 Display financial PRINT ("percentage=166%) 
 END
 
+
+
+
+# Human resources
+
+
+# Ayesha Beauty Creation have come up with a technology system to record the attendence of it's employees. 
+# The system work with a software that an employee can only access only when he or she is at work place.
+# For an employee to record his/her attendence can just click present option on her phone each day before 08:00 through an appliction.
+# The systemonly open for 30 min from 07:30 - 08:800 each day monday to friday.
+# If you are not present or fail to mark your attendence the system can record absent an close itself after 30  minutes.
+
+Start
+     Prompt attendence_record_option
+     GET attendence_record_option
+     If (time = 07:30 - 08:00 AND emplye is at work_place) THEN
+     
+     PRINT ("present")
+     ELSE THEN 
+    PRINT (" The system record absent AND close itself")
+     
+     ENDIF
+     END
+
+
+
+
+
+
+
+START
+
 GET ItemName=array(Shampoo, ),(Fringes),(Bangs)
 
-DOWHILE( ItemName=0to2)
+DOWHILE
 
 IF products are >= 35 THEN
 
-Execute'PRODUCT SHOULD BE TRANSPORTED TO DESTINATION' ELSE 
-Execute 'THE AMOUNT OF PRODUCT YOU SELECTED DOES NOT MEET THE MINIMUM VALUE,PLEASE WAIT TILL IT DOES' ELSE 
-Execute'ERROR,PLEASE TRY AGAIN LATER' 
-ENDIF 
+OUTPUT("PRODUCT SHOULD BE TRANSPORTED TO DESTINATION")
+ELSE 
+     IF  OUTPUT("THE AMOUNT OF PRODUCT YOU SELECTED DOES NOT MEET THE MINIMUM VALUE,PLEASE WAIT TILL IT DOES") 
+ELSE 
+     IF
+OUTPUT ("Execute'ERROR,PLEASE TRY AGAIN LATER") 
+ENDIF
+ENDIF
+
+ENDDO
 STOP
 
-Write a program to calculate the store values and include the VAT 
+# Write a program to calculate the store values and include the VAT 
+
 START 
-Enter num For e = 1 to num 
-DO Enter item(e) 
-Enter price 
-Enter Bprice 
-Enter code IF code = 1 THEN Sprice(e)= Bprice * 2.00 * 1.05 ELSE 
+ PROMPT price, Bprice, code
+
+GET num For items = 1 to X 
+DO 
+ENTER item(X), Bprice, code 
+
+Sprice(1)= Bprice * 2.00 * 1.05
+
+
+IF code = 1 THEN 
+
+ENTER Sprice
+ 
 Sprice(e)= Bprice * 1.00 
 endif 
 ENDFOR 

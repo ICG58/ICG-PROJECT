@@ -9,6 +9,9 @@ ENDIF
 ENDIF 
 END
 
+
+START
+
 PROMPT payment 
 GET payment
 
@@ -19,6 +22,9 @@ ELSE
  DISPLAY (Please feel free to reach our distributors Dischem Pharmacies Namibia and PnP Namibia stores")
  ENDIF
  END
+
+START
+
 
 
 PROMPT Credit_Card_number 
@@ -37,6 +43,9 @@ ENDIF
 ENDIF
 ENDIF
 END
+
+
+START
 
 INPUT ("your Home address")
  GET address 
@@ -66,7 +75,9 @@ PRINT("Loss was made") ELSE
 IF sellingPrice => costPrice THEN
 
  PRINT("You gain VAT")
-ENDIF ENDIF END
+ENDIF
+ENDIF
+END
 
 #Desk check for answer accepted 
 

@@ -121,7 +121,9 @@ END
 
 START 
       Prompt attendence_record_option
-     GET attendence_record_option
+       Employee_detail( name, code)
+        GET attendence_record_option
+     
          If (time = 07:30 - 08:00 AND emplye is at work_place) THEN
              PRINT ("present")
                ELSE THEN 
